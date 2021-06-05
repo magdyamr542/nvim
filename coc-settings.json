@@ -1,0 +1,5 @@
+{
+"coc.preferences.formatOnSaveFiletypes": ["ts" , "js" , "py"],
+"eslint.autoFixOnSave": true,
+"prettier.formatterPriority":1
+}

@@ -44,6 +44,6 @@ nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
 " source init.vim
-nnoremap <Leader>vr :source $MYVIMRC<CR>
+nnoremap <Leader>r :source $MYVIMRC<CR>
 " remove highlight from last search pattern when pressing enter
 nnoremap <CR> :noh<CR><CR>
