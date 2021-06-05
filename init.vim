@@ -5,6 +5,6 @@ source $HOME/.config/nvim/general/cursor.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/ui.vim
-source $HOME/.config/nvim/python/options.vim
+source $HOME/.config/nvim/python/config.vim
 source $HOME/.config/nvim/ts/config.vim
 
