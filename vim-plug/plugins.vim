@@ -20,3 +20,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
