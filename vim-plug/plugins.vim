@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'tpope/vim-surround'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+        Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
