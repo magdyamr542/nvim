@@ -47,3 +47,9 @@ nnoremap <Leader>O O<Esc>^Da
 nnoremap <Leader>r :source $MYVIMRC<CR>
 " remove highlight from last search pattern when pressing enter
 nnoremap <CR> :noh<CR><CR>
+
+" Nerdtree mapping
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
