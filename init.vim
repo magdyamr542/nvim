@@ -8,3 +8,4 @@ source $HOME/.config/nvim/general/ui.vim
 source $HOME/.config/nvim/python/config.vim
 source $HOME/.config/nvim/ts/config.vim
 
+

@@ -16,10 +16,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'maxmellon/vim-jsx-pretty'   
         Plug 'morhetz/gruvbox'
         Plug 'kien/ctrlp.vim'
+        Plug 'unblevable/quick-scope'       
         Plug 'tpope/vim-surround'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
         Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
+"MAPPINGS FOR THE PLUGINS
+
+" ts-server
 let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+" quickscope color mappings
+highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
