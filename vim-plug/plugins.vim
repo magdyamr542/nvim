@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'morhetz/gruvbox'
         Plug 'kien/ctrlp.vim'
         Plug 'unblevable/quick-scope'       
+        Plug 'liuchengxu/vim-which-key'
         Plug 'tpope/vim-surround'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
