@@ -57,3 +57,5 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 "Vim Whick Key to show Mappings of commands
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+"Floaterm
+nnoremap   <silent>   <leader>;    :FloatermNew<CR>

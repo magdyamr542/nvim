@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'unblevable/quick-scope'       
         Plug 'liuchengxu/vim-which-key'
         Plug 'tpope/vim-surround'
+        Plug 'voldikss/vim-floaterm'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
         Plug 'rafi/awesome-vim-colorschemes'
@@ -31,3 +32,10 @@ let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 " quickscope color mappings
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+
+" Floaterm
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
