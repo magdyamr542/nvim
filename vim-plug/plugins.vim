@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'sheerun/vim-polyglot'
         Plug 'scrooloose/NERDTree'
         Plug 'jiangmiao/auto-pairs'
+        Plug 'RRethy/vim-illuminate'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         Plug 'sbdchd/neoformat'
         Plug 'pangloss/vim-javascript'    
