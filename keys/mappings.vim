@@ -59,3 +59,24 @@ nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 "Floaterm
 nnoremap   <silent>   <leader>;    :FloatermNew<CR>
+
+"make Y copy to the end of the line
+nnoremap Y y$
+"keep the cursor centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
+"undo breakpoints
+inoremap  , ,<c-g>u
+inoremap  . .<c-g>u
+inoremap  ! !<c-g>u
+inoremap  ? ?<c-g>u
+
+"Moving text around
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-j> <esc>:m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==

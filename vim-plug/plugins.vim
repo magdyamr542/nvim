@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'sbdchd/neoformat'
         Plug 'pangloss/vim-javascript'    
         Plug 'leafgarland/typescript-vim' 
-        Plug 'maxmellon/vim-jsx-pretty'   
         Plug 'morhetz/gruvbox'
         Plug 'kien/ctrlp.vim'
         Plug 'unblevable/quick-scope'       
@@ -40,3 +39,6 @@ let g:floaterm_width=0.8
 let g:floaterm_height=0.8
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
+
+"display buffers
+let g:airline#extensions#tabline#enabled = 1
