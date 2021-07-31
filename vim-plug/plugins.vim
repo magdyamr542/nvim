@@ -36,9 +36,12 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 " Floaterm
 let g:floaterm_autoinsert=1
 let g:floaterm_width=0.8
-let g:floaterm_height=0.8
+let g:floaterm_height=0.2
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
+let g:floaterm_position="bottom"
+let g:floaterm_wintype="split"
+
 
 "display buffers
 let g:airline#extensions#tabline#enabled = 1

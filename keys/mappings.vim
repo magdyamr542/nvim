@@ -54,6 +54,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+" Floaterm mappings
+nnoremap <leader>t :FloatermToggle<CR>
+
 
 "Vim Whick Key to show Mappings of commands
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
