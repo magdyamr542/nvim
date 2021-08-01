@@ -88,4 +88,7 @@ vnoremap p pgvy
 
 "vscode mapping like: close all windows except the current one
 nnoremap <c-k><c-w> <c-w><c-o>
+"dont skip wrapped lines
+noremap j gj
+noremap k gk
 
