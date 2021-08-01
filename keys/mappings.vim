@@ -85,3 +85,7 @@ nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 "dont override the resiger when copying
 vnoremap p pgvy
+
+"vscode mapping like: close all windows except the current one
+nnoremap <c-k><c-w> <c-w><c-o>
+
