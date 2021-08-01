@@ -83,3 +83,5 @@ inoremap <C-j> <esc>:m .+1<CR>==
 inoremap <C-j> <esc>:m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
+"dont override the resiger when copying
+vnoremap p pgvy
