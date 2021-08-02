@@ -6,6 +6,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
+        Plug 'ambv/black'
         Plug 'sheerun/vim-polyglot'
         Plug 'scrooloose/NERDTree'
         Plug 'jiangmiao/auto-pairs'
@@ -20,6 +21,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'liuchengxu/vim-which-key'
         Plug 'tpope/vim-surround'
         Plug 'voldikss/vim-floaterm'
+        Plug 'flazz/vim-colorschemes'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
         Plug 'rafi/awesome-vim-colorschemes'
