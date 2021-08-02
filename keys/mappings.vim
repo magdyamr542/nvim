@@ -100,3 +100,5 @@ noremap ; :
 
 " close window fast
 nnoremap <c-w> <c-w>q
+"comment a line
+nnoremap <c-c><c-c> :Commentary<CR>
