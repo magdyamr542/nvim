@@ -92,3 +92,6 @@ nnoremap <c-k><c-w> <c-w><c-o>
 noremap j gj
 noremap k gk
 
+"closing vim
+nnoremap <c-w><c-w> :wq<CR>
+
