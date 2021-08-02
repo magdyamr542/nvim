@@ -95,3 +95,8 @@ noremap k gk
 "closing vim
 nnoremap <c-w><c-w> :wq<CR>
 
+" Go to command mode without the shift
+noremap ; :
+
+" close window fast
+nnoremap <c-w> <c-w>q
