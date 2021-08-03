@@ -21,3 +21,12 @@ let g:coc_global_extensions = [ 'coc-tsserver', 'coc-eslint' ]
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*node_modules*
 let g:NERDTreeIgnore = ['^node_modules$']
 let NERDTreeRespectWildIgnore=1
+
+
+"format on save
+fun! FormatOnSave()
+	:CocCommand prettier.formatFile
+endfun
+
+:autocmd BufWritePost *.ts call FormatOnSave()
+:autocmd BufWritePost *.json call FormatOnSave()

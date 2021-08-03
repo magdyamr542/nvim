@@ -102,3 +102,6 @@ noremap ; :
 nnoremap <c-w> <c-w>q
 "comment a line
 nnoremap <c-c><c-c> :Commentary<CR>
+
+"format file
+nnoremap <leader>f :CocCommand prettier.formatFile<CR>
