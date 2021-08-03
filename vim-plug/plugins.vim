@@ -7,6 +7,9 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
         Plug 'ambv/black'
+        Plug 'nvim-lua/popup.nvim'
+        Plug 'nvim-lua/plenary.nvim'
+        Plug 'nvim-telescope/telescope.nvim'
         Plug 'sheerun/vim-polyglot'
         Plug 'scrooloose/NERDTree'
         Plug 'jiangmiao/auto-pairs'
@@ -16,7 +19,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'pangloss/vim-javascript'    
         Plug 'leafgarland/typescript-vim' 
         Plug 'morhetz/gruvbox'
-        Plug 'kien/ctrlp.vim'
         Plug 'unblevable/quick-scope'       
         Plug 'liuchengxu/vim-which-key'
         Plug 'tpope/vim-commentary'

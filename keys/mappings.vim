@@ -105,3 +105,7 @@ nnoremap <c-c><c-c> :Commentary<CR>
 
 "format file
 nnoremap <leader>f :CocCommand prettier.formatFile<CR>
+"ctrl p for find files
+nnoremap <c-p> <CMD>Telescope find_files<CR>
+"show buffers
+nnoremap <silent> \\ <CMD> Telescope buffers<CR>
