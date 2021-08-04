@@ -5,8 +5,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+        Plug 'Mofiqul/vscode.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
         Plug 'ambv/black'
+        Plug 'NLKNguyen/papercolor-theme'
         Plug 'nvim-lua/popup.nvim'
         Plug 'nvim-lua/plenary.nvim'
         Plug 'nvim-telescope/telescope.nvim'

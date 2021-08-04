@@ -111,3 +111,9 @@ nnoremap <silent> \\ :Telescope buffers<CR>
 "finding words
 nnoremap <c-f> :Telescope grep_string<CR>
 nnoremap <leader>f :Telescope live_grep<CR>
+
+" change word in file
+nnoremap <leader>fr :call ChangeWordUnderCursor()<CR>
+"install plugins
+nnoremap <leader>i <CMD> PlugInstall<CR>
+
