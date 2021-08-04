@@ -52,7 +52,6 @@ nnoremap <CR> :noh<CR><CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 
 " Floaterm mappings
 nnoremap <leader>t :FloatermToggle<CR>
@@ -110,5 +109,5 @@ nnoremap <c-p> <CMD>Telescope find_files<CR>
 "show buffers
 nnoremap <silent> \\ :Telescope buffers<CR>
 "finding words
-nnoremap <c-f> /
+nnoremap <c-f> :Telescope grep_string<CR>
 nnoremap <leader>f :Telescope live_grep<CR>
