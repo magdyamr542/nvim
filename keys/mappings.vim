@@ -92,7 +92,7 @@ noremap j gj
 noremap k gk
 
 "closing vim
-nnoremap <c-w><c-w> :wq<CR>
+nnoremap <c-w><c-w> :q<CR>
 
 " Go to command mode without the shift
 noremap ; :
