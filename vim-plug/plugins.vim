@@ -7,6 +7,8 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'Mofiqul/vscode.nvim'
         Plug 'kyazdani42/nvim-web-devicons'
+        Plug 'tomasiser/vim-code-dark'
+        Plug 'ayu-theme/ayu-vim' 
         Plug 'ambv/black'
         Plug 'NLKNguyen/papercolor-theme'
         Plug 'nvim-lua/popup.nvim'
@@ -43,8 +45,8 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 
 " Floaterm
 let g:floaterm_autoinsert=1
-let g:floaterm_width=0.8
-let g:floaterm_height=0.2
+let g:floaterm_width=3
+let g:floaterm_height=0.3
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
 let g:floaterm_position="bottom"
