@@ -117,3 +117,6 @@ nnoremap <leader>fr :call ChangeWordUnderCursor()<CR>
 "install plugins
 nnoremap <leader>i <CMD> PlugInstall<CR>
 
+"changing the color theme
+nnoremap <leader>w <CMD> lua require("vscode").change_style("white")<CR>
+nnoremap <leader>d <CMD> lua require("vscode").change_style("dark")<CR>
