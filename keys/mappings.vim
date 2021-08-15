@@ -98,7 +98,7 @@ nnoremap <c-w><c-w> :q<CR>
 noremap ; :
 
 " close window fast
-nnoremap <c-w> <c-w>q
+nnoremap <c-w> <c-w> :wq<CR>
 "comment a line
 vnoremap <c-c><c-c> :Commentary<CR>
 
