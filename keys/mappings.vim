@@ -22,8 +22,6 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
-" Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
@@ -33,6 +31,7 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap < <gv
 nnoremap <Tab> >>_
 vnoremap <Tab> >gv
+
 
 " Better window navigation
 nnoremap <C-h> <C-w>h
@@ -91,14 +90,12 @@ nnoremap <c-k><c-w> <c-w><c-o>
 noremap j gj
 noremap k gk
 
-"closing vim
-nnoremap <c-w><c-w> :q<CR>
 
 " Go to command mode without the shift
 noremap ; :
 
 " close window fast
-nnoremap <c-w> <c-w> :wq<CR>
+nnoremap <c-w><c-w> :wq!<CR> 
 "comment a line
 vnoremap <c-c><c-c> :Commentary<CR>
 
