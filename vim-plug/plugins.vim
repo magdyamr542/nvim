@@ -16,7 +16,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'nvim-telescope/telescope.nvim'
         Plug 'sheerun/vim-polyglot'
         Plug 'scrooloose/NERDTree'
-        Plug 'jiangmiao/auto-pairs'
         Plug 'RRethy/vim-illuminate'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         Plug 'sbdchd/neoformat'
