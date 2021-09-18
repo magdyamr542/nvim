@@ -121,3 +121,7 @@ nnoremap <leader>d <CMD> lua require("vscode").change_style("dark")<CR>
 " replace fast
 nmap  S  :%s//g<LEFT><LEFT>
 nmap  <leader>s  :call ReplaceAll()<CR>
+
+" end of the line without space. it does not include the line break at the end
+" of the line
+nmap $ g_
