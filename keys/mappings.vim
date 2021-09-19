@@ -124,4 +124,4 @@ nmap  <leader>s  :call ReplaceAll()<CR>
 nmap $ g_
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
