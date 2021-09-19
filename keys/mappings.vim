@@ -122,3 +122,6 @@ nmap  <leader>s  :call ReplaceAll()<CR>
 " end of the line without space. it does not include the line break at the end
 " of the line
 nmap $ g_
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
