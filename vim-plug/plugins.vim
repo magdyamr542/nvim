@@ -6,6 +6,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'Mofiqul/vscode.nvim'
+        Plug 'jiangmiao/auto-pairs'
         Plug 'kyazdani42/nvim-web-devicons'
         Plug 'tomasiser/vim-code-dark'
         Plug 'ayu-theme/ayu-vim' 
