@@ -88,9 +88,6 @@ noremap j gj
 noremap k gk
 
 
-" Go to command mode without the shift
-noremap ; :
-
 " close window fast
 nnoremap <c-w><c-w> :wq!<CR> 
 "comment a line
