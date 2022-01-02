@@ -87,24 +87,18 @@ nnoremap <c-k><c-w> <c-w><c-o>
 noremap j gj
 noremap k gk
 
-
-" close window fast
-nnoremap <c-w><c-w> :wq!<CR> 
+" close vim
+nnoremap <c-w><c-w> :call CloseVim()<CR> 
 "comment a line
 vnoremap <c-c><c-c> :Commentary<CR>
-
-"format file
-nnoremap <leader>f :CocCommand prettier.formatFile<CR>
 "ctrl p for find files
-nnoremap <c-p> <CMD>Telescope find_files hidden=true<CR>
+nnoremap <c-p> <CMD>Telescope find_files<CR>
 "show buffers
 nnoremap <silent> \\ :Telescope buffers<CR>
 "finding words
 nnoremap <c-f> :Telescope grep_string<CR>
 nnoremap <leader>f :Telescope live_grep<CR>
 
-" change word in file
-nnoremap <leader>fr :call ChangeWordUnderCursor()<CR>
 "install plugins
 nnoremap <leader>i <CMD> PlugInstall<CR>
 

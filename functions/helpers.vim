@@ -5,3 +5,6 @@ fun! ReplaceAll()
 endfun
 
 
+fun! CloseVim()
+       execute ":wqa"
+endfun
