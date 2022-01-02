@@ -1,5 +1,4 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["ts" , "js" ],
-                        "prettier.formatterPriority" :1 ,
-
+  "coc.preferences.formatOnSaveFiletypes": ["ts", "js", "json"],
+  "prettier.formatterPriority": 1
 }

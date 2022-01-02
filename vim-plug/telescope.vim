@@ -3,6 +3,11 @@ local actions = require('telescope.actions')
 require('telescope').setup{
 defaults = {
     file_ignore_patterns = {".git/*"},
+    pickers = {
+            find_files = {
+                    hidden=true
+                    }
+            },
         mappings = {
                 i = {
                         -- set going up and down with <ctr-j> <ctrl-k>
