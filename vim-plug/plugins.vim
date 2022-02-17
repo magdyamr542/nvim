@@ -12,7 +12,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'tomasiser/vim-code-dark'
         Plug 'ayu-theme/ayu-vim' 
         Plug 'ambv/black'
-        Plug 'NLKNguyen/papercolor-theme'
         Plug 'nvim-lua/popup.nvim'
         Plug 'nvim-lua/plenary.nvim'
         Plug 'nvim-telescope/telescope.nvim'
