@@ -5,6 +5,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+        Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         Plug 'Mofiqul/vscode.nvim'
         Plug 'jiangmiao/auto-pairs'
         Plug 'kyazdani42/nvim-web-devicons'
