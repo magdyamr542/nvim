@@ -10,3 +10,4 @@ source $HOME/.config/nvim/ts/config.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/functions/helpers.vim
 source $HOME/.config/nvim/go/config.vim
+source $HOME/.config/nvim/snippets/config.vim
