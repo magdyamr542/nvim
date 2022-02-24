@@ -30,6 +30,10 @@ nnoremap <Tab> >>_
 vnoremap <Tab> >gv
 
 
+" Select to end of line without new line character
+vnoremap $ g_
+
+
 " Better window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
