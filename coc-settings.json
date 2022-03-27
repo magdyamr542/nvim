@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["ts", "js", "json"],
+  "coc.preferences.formatOnSaveFiletypes": ["json", "javascript", "typescript"],
   "prettier.formatterPriority": 1,
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true
