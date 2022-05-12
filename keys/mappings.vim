@@ -94,7 +94,8 @@ noremap k gk
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 
 "comment a line
-vnoremap <c-c><c-c> :Commentary<CR>
+vnoremap <c-k><c-c> :Commentary<CR>
+vnoremap <c-k><c-u> :Commentary<CR>
 "ctrl p for find files
 nnoremap <c-p> <CMD>Telescope find_files<CR>
 "show buffers
@@ -120,3 +121,5 @@ nmap $ g_
 
 " Use K to show documentation in preview window.
 nnoremap <silent> gh :call <SID>show_documentation()<CR>
+
+
