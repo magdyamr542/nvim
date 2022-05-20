@@ -91,6 +91,14 @@ nnoremap <c-k><c-w> <c-w><c-o>
 noremap j gj
 noremap k gk
 
+" search a selected word like vscode
+vnoremap <c-f> y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+" comments
+vnoremap <c-k><c-c> :Commentary<CR>
+nmap <c-k><c-c> :Commentary<CR>
+nmap <c-k><c-u> :Commentary<CR>
+
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 
 "comment a line
