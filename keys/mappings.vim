@@ -12,22 +12,12 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap jj <Esc>
 
 
-" TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
-" <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better tabbing
-vnoremap < <gv
-nnoremap <Tab> >>_
-vnoremap <Tab> >gv
 
 
 " Select to end of line without new line character
@@ -133,3 +123,4 @@ nnoremap <silent> gh :call <SID>show_documentation()<CR>
 
 " for nerdtree to show the current file
  nnoremap <Leader>b :NERDTreeFind<cr>
+
