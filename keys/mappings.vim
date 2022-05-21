@@ -124,3 +124,7 @@ nnoremap <silent> gh :call <SID>show_documentation()<CR>
 " for nerdtree to show the current file
  nnoremap <Leader>b :NERDTreeFind<cr>
 
+
+" cycle through autocomplete with tap
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
