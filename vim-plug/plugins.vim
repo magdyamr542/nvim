@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
         Plug 'rafi/awesome-vim-colorschemes'
+        Plug 'EdenEast/nightfox.nvim' 
 call plug#end()
 
 "MAPPINGS FOR THE PLUGINS
