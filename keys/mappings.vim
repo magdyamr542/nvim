@@ -107,7 +107,7 @@ nnoremap <leader>i <CMD> PlugInstall<CR>
 
 "changing the color theme
 nnoremap <leader>w <CMD> lua require("vscode").change_style("white")<CR>
-nnoremap <leader>d <CMD> colorscheme nightfox<CR>
+nnoremap <leader>d <CMD> lua require("vscode").change_style("dark")<CR>
 nnoremap <leader>g <CMD> colorscheme gruvbox<CR>
 
 " replace fast
