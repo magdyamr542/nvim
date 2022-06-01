@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'EdenEast/nightfox.nvim' 
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 "MAPPINGS FOR THE PLUGINS
