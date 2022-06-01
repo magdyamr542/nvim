@@ -18,7 +18,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'sheerun/vim-polyglot'
         Plug 'scrooloose/NERDTree'
         Plug 'RRethy/vim-illuminate'
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
         Plug 'sbdchd/neoformat'
         Plug 'pangloss/vim-javascript'    
         Plug 'leafgarland/typescript-vim' 
@@ -35,6 +34,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'EdenEast/nightfox.nvim' 
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+        Plug 'neovim/nvim-lspconfig'
+        Plug 'williamboman/nvim-lsp-installer'
 call plug#end()
 
 "MAPPINGS FOR THE PLUGINS
