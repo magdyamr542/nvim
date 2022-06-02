@@ -118,9 +118,6 @@ nmap  <leader>s  :call ReplaceAll()<CR>
 " of the line
 nmap $ g_
 
-" Use K to show documentation in preview window.
-nnoremap <silent> gh :call <SID>show_documentation()<CR>
-
 " for nerdtree to show the current file
  nnoremap <Leader>b :NERDTreeFind<cr>
 

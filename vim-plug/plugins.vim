@@ -36,12 +36,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'neovim/nvim-lspconfig'
         Plug 'williamboman/nvim-lsp-installer'
+        Plug 'hrsh7th/cmp-nvim-lsp'
+        Plug 'hrsh7th/cmp-buffer'
+        Plug 'hrsh7th/cmp-path'
+        Plug 'hrsh7th/cmp-cmdline'
+        Plug 'hrsh7th/nvim-cmp'
+        Plug 'hrsh7th/cmp-vsnip'
+        Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
-"MAPPINGS FOR THE PLUGINS
-
-" ts-server
-let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 " quickscope color mappings
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
