@@ -22,13 +22,13 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gh', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<c-f>', vim.lsp.buf.formatting, bufopts)
   vim.keymap.set('n', 'fr', vim.lsp.buf.references, bufopts)
 end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright',  'tsserver' , 'gopls' , 'sumneko_lua' }
+local servers = { 'pyright',  'tsserver' , 'gopls' , 'sumneko_lua' , 'html' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,

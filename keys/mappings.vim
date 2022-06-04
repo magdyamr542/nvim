@@ -91,9 +91,7 @@ nmap <c-k><c-u> :Commentary<CR>
 
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 
-"comment a line
-vnoremap <c-k><c-c> :Commentary<CR>
-vnoremap <c-k><c-u> :Commentary<CR>
+vnoremap <leader>kc :Commentary<CR>
 "ctrl p for find files
 nnoremap <c-p> <CMD>Telescope find_files<CR>
 "show buffers
