@@ -104,7 +104,7 @@ nnoremap <leader>f :Telescope live_grep<CR>
 nnoremap <leader>i <CMD> PlugInstall<CR>
 
 "changing the color theme
-nnoremap <leader>w <CMD> lua require("vscode").change_style("white")<CR>
+nnoremap <leader>w <CMD> lua require("vscode").change_style("light")<CR>
 nnoremap <leader>d <CMD> lua require("vscode").change_style("dark")<CR>
 nnoremap <leader>g <CMD> colorscheme gruvbox<CR>
 
@@ -118,7 +118,6 @@ nmap $ g_
 
 " for nerdtree to show the current file
  nnoremap <Leader>b :NERDTreeFind<cr>
-
 
 " cycle through autocomplete with tap
 inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

@@ -12,3 +12,4 @@ fun! UseGruvbox()
     hi TelescopeBorder guifg=#5eacd
 endfun
 call UseGruvbox()
+

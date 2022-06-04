@@ -14,4 +14,5 @@ source $HOME/.config/nvim/treeesitter/treesitter.vim
 source $HOME/.config/nvim/lsp/formatOnSave.vim
 source $HOME/.config/nvim/completion/completion.vim
 source $HOME/.config/nvim/lsp/lsp.vim
+source $HOME/.config/nvim/bufferline/bufferline.vim
 
