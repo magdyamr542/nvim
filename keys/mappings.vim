@@ -39,8 +39,6 @@ nnoremap <Leader>r :source $MYVIMRC<CR>
 nnoremap <CR> :noh<CR><CR>
 
 " Nerdtree mapping
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 " Floaterm mappings
