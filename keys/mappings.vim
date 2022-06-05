@@ -11,18 +11,12 @@ nnoremap <M-l>    :vertical resize +2<CR>
 " I hate escape more than anything else
 inoremap jj <Esc>
 
-
-
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
-
-
-
 " Select to end of line without new line character
 vnoremap $ g_
-
 
 " Better window navigation
 nnoremap <C-h> <C-w>h
