@@ -80,7 +80,7 @@ nmap <c-k><c-c> :Commentary<CR>
 nmap <c-k><c-u> :Commentary<CR>
 
 " close vim
-nnoremap <c-q> :call CloseVim()<CR> 
+nnoremap <c-w><c-w> :call CloseVim()<CR> 
 vnoremap <leader>kc :Commentary<CR>
 "ctrl p for find files
 nnoremap <c-p> <CMD>Telescope find_files<CR>
