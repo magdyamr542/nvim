@@ -43,10 +43,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'hrsh7th/nvim-cmp'
         Plug 'hrsh7th/cmp-vsnip'
         Plug 'hrsh7th/vim-vsnip'
+        Plug 'hrsh7th/vim-vsnip-integ'
         Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
         Plug 'kyazdani42/nvim-web-devicons' 
         Plug 'ryanoasis/vim-devicons' 
         Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+        Plug 'rafamadriz/friendly-snippets'
 call plug#end()
 
 
