@@ -67,8 +67,6 @@ nnoremap <leader>k :m .-2<CR>==
 "dont override the resiger when copying
 vnoremap p pgvy
 
-"vscode mapping like: close all windows except the current one
-nnoremap <c-k><c-w> <c-w><c-o>
 "dont skip wrapped lines
 noremap j gj
 noremap k gk
@@ -82,7 +80,7 @@ nmap <c-k><c-c> :Commentary<CR>
 nmap <c-k><c-u> :Commentary<CR>
 
 " close vim
-nnoremap <c-w><c-w> :call CloseVim()<CR> 
+nnoremap <c-q> :call CloseVim()<CR> 
 vnoremap <leader>kc :Commentary<CR>
 "ctrl p for find files
 nnoremap <c-p> <CMD>Telescope find_files<CR>
@@ -117,3 +115,6 @@ inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 
 " open markdown preview
 nnoremap <leader>m :MarkdownPreview<CR>
+
+" buffer mappings
+source $HOME/.config/nvim/keys/buffer-mappings.vim
