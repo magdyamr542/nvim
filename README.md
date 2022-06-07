@@ -11,4 +11,4 @@
 #### Lsp
   5. ![2](./pics/lsp,png)
 #### Path intellisense
-  5. ![3](./pics/howItLooks.png)
+  5. ![3](./pics/path.png)
