@@ -1,4 +1,6 @@
-## Neovim Configuration
+## Neovim installation
+  run `./install latest osx` or `./install.sh latest osx`
+## Neovim configuration
 ### Steps to install
   1. `mkdir ~/.config`
   2. `cd ~/.config`
@@ -12,3 +14,4 @@
   5. ![2](./pics/lsp,png)
 #### Path intellisense
   5. ![3](./pics/path.png)
+
