@@ -4,4 +4,11 @@
   2. `cd ~/.config`
   3. git clone this **Repo**
   4. make an alias `vim=neovim` to be able to use `neovim` as `vim` command
-  5. ![how it looks](./howItLooks.png)
+
+### Part of what you get
+#### File navigation
+  5. ![1](./pics/howItLooks.png)
+#### Lsp
+  5. ![2](./pics/lsp,png)
+#### Path intellisense
+  5. ![3](./pics/howItLooks.png)
