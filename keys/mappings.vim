@@ -72,7 +72,6 @@ noremap j gj
 noremap k gk
 
 " search a selected word like vscode
-vnoremap <c-f> y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " comments
 vnoremap <c-k><c-c> :Commentary<CR>
@@ -87,7 +86,6 @@ nnoremap <c-p> <CMD>Telescope find_files<CR>
 "show buffers
 nnoremap <silent> \\ :Telescope buffers<CR>
 "finding words
-nnoremap <c-f> :Telescope grep_string<CR>
 nnoremap <leader>f :Telescope live_grep<CR>
 
 "install plugins
