@@ -49,6 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'ryanoasis/vim-devicons' 
         Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
         Plug 'rafamadriz/friendly-snippets'
+        Plug 'yioneko/nvim-yati'
 call plug#end()
 
 
