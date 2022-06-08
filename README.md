@@ -1,17 +1,23 @@
-## Neovim installation
+# My neovim configuration
+### install neovim
   run `./install latest osx` or `./install.sh latest osx`
-## Neovim configuration
-### Steps to install
+### setup
   1. `mkdir ~/.config`
   2. `cd ~/.config`
-  3. git clone this **Repo**
-  4. make an alias `vim=neovim` to be able to use `neovim` as `vim` command
+  3. git clone this repo
 
 ### Part of what you get
-#### File navigation
-  5. ![1](./pics/howItLooks.png)
-#### Lsp
-  5. ![2](./pics/lsp,png)
-#### Path intellisense
-  5. ![3](./pics/path.png)
+##### File navigation
+   ![1](./pics/howItLooks.png)
+##### Lsp
+   ![2](./pics/lsp,png)
+##### Path intellisense
+   ![3](./pics/path.png)
+
+##### Auto completion
+   ![4](./pics/autoComp.png)
+##### Different color themes
+![4](./pics/dark.png)
+![5](./pics/light.png)
+![6](./pics/gruvbox.png)
 
