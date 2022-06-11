@@ -35,14 +35,8 @@ nnoremap <CR> :noh<CR><CR>
 " Nerdtree mapping
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-" Floaterm mappings
-nnoremap <leader>t :FloatermToggle<CR>
-
-
 "Vim Whick Key to show Mappings of commands
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-"Floaterm
-nnoremap   <silent>   <leader>;    :FloatermNew<CR>
 
 "make Y copy to the end of the line
 nnoremap Y y$

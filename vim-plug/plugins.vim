@@ -27,7 +27,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'tpope/vim-commentary'
         Plug 'tpope/vim-surround'
         Plug 'dense-analysis/ale'
-        Plug 'voldikss/vim-floaterm'
         Plug 'flazz/vim-colorschemes'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -51,20 +50,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'rafamadriz/friendly-snippets'
         Plug 'yioneko/nvim-yati'
 call plug#end()
-
-
-" quickscope color mappings
-highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
-
-" Floaterm
-let g:floaterm_autoinsert=1
-let g:floaterm_width=3
-let g:floaterm_height=0.3
-let g:floaterm_wintitle=0
-let g:floaterm_autoclose=1
-let g:floaterm_position="bottom"
-let g:floaterm_wintype="split"
-
 
 "display buffers
 let g:airline#extensions#tabline#enabled = 1

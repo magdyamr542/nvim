@@ -26,3 +26,5 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "finding words
 nnoremap <leader>f :Telescope live_grep<CR>
+
+
