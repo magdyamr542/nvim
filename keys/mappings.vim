@@ -81,12 +81,6 @@ nmap <c-k><c-u> :Commentary<CR>
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 
 vnoremap <leader>kc :Commentary<CR>
-"ctrl p for find files
-nnoremap <c-p> <CMD>Telescope find_files<CR>
-"show buffers
-nnoremap <silent> \\ :Telescope buffers<CR>
-"finding words
-nnoremap <leader>f :Telescope live_grep<CR>
 
 "install plugins
 nnoremap <leader>i <CMD> PlugInstall<CR>

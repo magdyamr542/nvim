@@ -18,3 +18,11 @@ defaults = {
         } 
 }
 EOF
+
+"ctrl p for find files
+nnoremap <c-p> <CMD>Telescope find_files hidden=true<CR>
+"show buffers
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+"finding words
+nnoremap <leader>f :Telescope live_grep<CR>
