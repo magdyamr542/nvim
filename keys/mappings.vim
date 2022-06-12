@@ -104,3 +104,10 @@ nnoremap <leader>m :MarkdownPreview<CR>
 
 " buffer mappings
 source $HOME/.config/nvim/keys/buffer-mappings.vim
+
+" full path
+nnoremap <leader>path :r! echo %:p<CR>
+nnoremap <leader>fn :r! echo %<CR>
+
+
+
