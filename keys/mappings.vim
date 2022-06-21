@@ -107,7 +107,4 @@ source $HOME/.config/nvim/keys/buffer-mappings.vim
 
 " full path
 nnoremap <leader>path :r! echo %:p<CR>
-nnoremap <leader>fn :r! echo %<CR>
-
-
-
+nnoremap <leader>file :r! echo %<CR>
