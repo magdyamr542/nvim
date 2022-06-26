@@ -49,6 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
         Plug 'rafamadriz/friendly-snippets'
         Plug 'yioneko/nvim-yati'
+        Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
 call plug#end()
 
 "display buffers
