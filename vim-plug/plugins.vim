@@ -51,6 +51,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'yioneko/nvim-yati'
         Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
         Plug 'karb94/neoscroll.nvim'
+        Plug 'Yggdroot/indentLine'
 call plug#end()
 
 "display buffers

@@ -17,4 +17,6 @@ source $HOME/.config/nvim/lsp/lsp.vim
 source $HOME/.config/nvim/bufferline/bufferline.vim
 source $HOME/.config/nvim/snippets/snippets.vim
 source $HOME/.config/nvim/smooth-scroll/smooth-scroll.vim
+source $HOME/.config/nvim/smooth-scroll/smooth-scroll.vim
+source $HOME/.config/nvim/indentLine/indentLine.vim
 
