@@ -1,0 +1,11 @@
+
+{
+  "range over channel": {
+    "prefix": ["ranch"],
+    "body": [
+      "for $1 := range $2 {",
+      "\t\t$0",
+      "}"
+    ],
+    "description": "Ranges over a channels values"
+  }}
