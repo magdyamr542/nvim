@@ -105,10 +105,6 @@ nnoremap <leader>m :MarkdownPreview<CR>
 " buffer mappings
 source $HOME/.config/nvim/keys/buffer-mappings.vim
 
-" full path
-nnoremap <leader>path :r! echo %:p<CR>
-nnoremap <leader>file :r! echo %<CR>
-
 " Search for selected text, forwards or backwards.
 vnoremap <silent> * :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
@@ -116,3 +112,5 @@ vnoremap <silent> * :<C-U>
   \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
+
+nnoremap <leader>p gqip<CR>
