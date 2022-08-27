@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'EdenEast/nightfox.nvim' 
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+        Plug 'nvim-treesitter/playground'
         Plug 'neovim/nvim-lspconfig'
         Plug 'williamboman/nvim-lsp-installer'
         Plug 'hrsh7th/cmp-nvim-lsp'
