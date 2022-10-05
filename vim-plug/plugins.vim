@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'EdenEast/nightfox.nvim' 
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'nvim-treesitter/playground'
+        Plug 'nvim-treesitter/nvim-treesitter-context'
         Plug 'neovim/nvim-lspconfig'
         Plug 'williamboman/nvim-lsp-installer'
         Plug 'hrsh7th/cmp-nvim-lsp'
