@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'dense-analysis/ale'
         Plug 'flazz/vim-colorschemes'
         Plug 'preservim/nerdcommenter'
-        Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'EdenEast/nightfox.nvim' 
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
