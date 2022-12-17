@@ -54,6 +54,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
         Plug 'karb94/neoscroll.nvim'
         Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+        Plug 'rose-pine/neovim', {'branch': 'master'}
 call plug#end()
 
 "display buffers
