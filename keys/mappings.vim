@@ -68,13 +68,13 @@ noremap k gk
 " search a selected word like vscode
 
 " comments
+vnoremap <c-k><c-u> :Commentary<CR>
 vnoremap <c-k><c-c> :Commentary<CR>
-nmap <c-k><c-c> :Commentary<CR>
 nmap <c-k><c-u> :Commentary<CR>
+nmap <c-k><c-c> :Commentary<CR>
 
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 
-vnoremap <leader>kc :Commentary<CR>
 
 "install plugins
 nnoremap <leader>i <CMD> PlugInstall<CR>
