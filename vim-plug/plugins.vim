@@ -56,6 +56,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'mg979/vim-visual-multi', {'branch': 'master'}
         Plug 'rose-pine/neovim', {'branch': 'master'}
         Plug 'lukas-reineke/indent-blankline.nvim'
+        Plug 'nvim-lualine/lualine.nvim'
+        Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
 "display buffers

@@ -4,6 +4,7 @@ source $HOME/.config/nvim/general/paths.vim
 source $HOME/.config/nvim/general/cursor.vim
 source $HOME/.config/nvim/general/commands.vim
 source $HOME/.config/nvim/general/highligh-on-yank.vim
+source $HOME/.config/nvim/general/lualine.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim
@@ -19,3 +20,4 @@ source $HOME/.config/nvim/bufferline/bufferline.vim
 source $HOME/.config/nvim/snippets/snippets.vim
 source $HOME/.config/nvim/smooth-scroll/smooth-scroll.vim
 source $HOME/.config/nvim/indent-blankline/config.vim
+source $HOME/.config/nvim/git/config.vim
