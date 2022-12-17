@@ -36,5 +36,6 @@ for _, lsp in pairs(servers) do
 end
 EOF
 
-
-
+lua << EOF
+require("fidget").setup{}
+EOF

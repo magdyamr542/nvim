@@ -58,7 +58,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'lukas-reineke/indent-blankline.nvim'
         Plug 'nvim-lualine/lualine.nvim'
         Plug 'lewis6991/gitsigns.nvim'
+        Plug 'j-hui/fidget.nvim'
 call plug#end()
+
 
 "display buffers
 let g:airline#extensions#tabline#enabled = 1
