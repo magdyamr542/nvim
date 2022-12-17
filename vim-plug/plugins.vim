@@ -55,6 +55,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'karb94/neoscroll.nvim'
         Plug 'mg979/vim-visual-multi', {'branch': 'master'}
         Plug 'rose-pine/neovim', {'branch': 'master'}
+        Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 "display buffers
