@@ -24,7 +24,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'morhetz/gruvbox'
         Plug 'unblevable/quick-scope'       
         Plug 'liuchengxu/vim-which-key'
-        Plug 'tpope/vim-commentary'
         Plug 'tpope/vim-surround'
         Plug 'dense-analysis/ale'
         Plug 'flazz/vim-colorschemes'
