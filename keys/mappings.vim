@@ -65,6 +65,9 @@ vnoremap p pgvy
 noremap j gj
 noremap k gk
 
+" commenting
+noremap <c-k><c-c> <Plug>(comment_toggle_linewise_current)
+vnoremap <c-k><c-u> <Plug>(comment_toggle_linewise_visual)
 
 " close vim
 nnoremap <c-w><c-w> :call CloseVim()<CR> 

@@ -4,6 +4,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
+" plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         Plug 'Mofiqul/vscode.nvim'
@@ -58,8 +59,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'nvim-lualine/lualine.nvim'
         Plug 'lewis6991/gitsigns.nvim'
         Plug 'j-hui/fidget.nvim'
+        Plug 'numToStr/Comment.nvim'
 call plug#end()
-
-
-"display buffers
-let g:airline#extensions#tabline#enabled = 1
