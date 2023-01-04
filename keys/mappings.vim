@@ -109,3 +109,7 @@ vnoremap <silent> * :<C-U>
 
 
 nnoremap <leader>p gqip<CR>
+
+" quick fix nav
+noremap <leader>]  :cnext<CR>
+noremap <leader>[  :cprevious<CR>
