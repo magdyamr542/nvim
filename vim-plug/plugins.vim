@@ -60,4 +60,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'lewis6991/gitsigns.nvim'
         Plug 'j-hui/fidget.nvim'
         Plug 'numToStr/Comment.nvim'
+        Plug 'Maan2003/lsp_lines.nvim'
 call plug#end()
