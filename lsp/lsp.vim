@@ -1,11 +1,12 @@
 lua << EOF
-require("nvim-lsp-installer").setup()
-require'lspconfig'.tsserver.setup{}
+require("mason").setup()
+require("mason-lspconfig").setup{
+    ensure_installed = { 'pyright',  'tsserver' , 'gopls' , 'sumneko_lua' , 'html' , "bashls" , "cssls" , "angularls" , "jsonls"}
+}
 EOF
 
 
 lua << EOF
-
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }

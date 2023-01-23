@@ -36,7 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'nvim-treesitter/playground'
         Plug 'nvim-treesitter/nvim-treesitter-context'
         Plug 'neovim/nvim-lspconfig'
-        Plug 'williamboman/nvim-lsp-installer'
         Plug 'hrsh7th/cmp-nvim-lsp'
         Plug 'hrsh7th/cmp-buffer'
         Plug 'hrsh7th/cmp-path'
@@ -60,4 +59,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'lewis6991/gitsigns.nvim'
         Plug 'j-hui/fidget.nvim'
         Plug 'numToStr/Comment.nvim'
+        Plug 'williamboman/mason.nvim'
+        Plug 'williamboman/mason-lspconfig.nvim'
 call plug#end()
