@@ -2,7 +2,7 @@
 nnoremap <c-w> :bd<CR> 
 
 " closing all buffers
-nnoremap <c-k><c-w>  :bufdo bwipeout<CR> 
+nnoremap <c-k><c-w> :call CloseOtherBuffers()<CR>
 
 
 " closes all other buffers but the opened one
@@ -26,4 +26,3 @@ function! CloseOtherBuffers()
     endfor
 endfunction
 
-nnoremap <c-k><c-k> :call CloseOtherBuffers()<CR>
