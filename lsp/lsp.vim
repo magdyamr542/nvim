@@ -1,7 +1,7 @@
 lua << EOF
 require("mason").setup()
 require("mason-lspconfig").setup{
-    ensure_installed = { 'pyright',  'tsserver' , 'gopls' , 'sumneko_lua' , 'html' , "bashls" , "cssls" , "angularls" , "jsonls"}
+    ensure_installed = { 'pyright',  'tsserver' , 'gopls' ,  'html' , "bashls" , "cssls" , "angularls" , "jsonls"}
 }
 EOF
 
@@ -33,10 +33,12 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright',  'tsserver' , 'gopls' , 'sumneko_lua' , 'html' , "bashls" , "cssls" , "angularls" , "jsonls"}
+local servers = { 'pyright',  'tsserver' , 'gopls' ,  'html' , "bashls" , "cssls" , "angularls" , "jsonls"}
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
         on_attach = on_attach,
+        capabilities = capabilities
         }
 end
 
