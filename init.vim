@@ -22,4 +22,3 @@ source $HOME/.config/nvim/indent-blankline/config.vim
 source $HOME/.config/nvim/git/config.vim
 source $HOME/.config/nvim/general/lualine.vim
 source $HOME/.config/nvim/general/comments.vim
-source $HOME/.config/nvim/lsp/diagnostics.vim

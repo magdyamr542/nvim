@@ -19,12 +19,15 @@ vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
 -- Mappings.
 -- See `:help vim.lsp.*` for documentation on any of the below functions
+local builtin = require('telescope.builtin')
 local bufopts = { noremap=true, silent=true, buffer=bufnr }
 vim.keymap.set('n', 'fd', vim.lsp.buf.definition, bufopts)
 vim.keymap.set('n', 'gh', vim.lsp.buf.hover, bufopts)
 vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
-vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
 vim.keymap.set('n', '<c-f>', vim.lsp.buf.formatting, bufopts)
+vim.keymap.set('n', '<leader>gd', builtin.lsp_implementations , bufopts )
+vim.keymap.set('n', '<leader>fd', builtin.lsp_references , bufopts )
 vim.keymap.set('n', 'fr', vim.lsp.buf.references, bufopts)
 end
 
