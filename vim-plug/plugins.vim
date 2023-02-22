@@ -25,7 +25,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'unblevable/quick-scope'       
         Plug 'liuchengxu/vim-which-key'
         Plug 'tpope/vim-surround'
-        Plug 'dense-analysis/ale'
         Plug 'flazz/vim-colorschemes'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
