@@ -28,7 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'flazz/vim-colorschemes'
         Plug 'preservim/nerdcommenter'
         Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-        Plug 'rafi/awesome-vim-colorschemes'
         Plug 'EdenEast/nightfox.nvim' 
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'nvim-treesitter/playground'
