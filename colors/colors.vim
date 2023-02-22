@@ -65,4 +65,12 @@ endfun
 
 
 " call UseRosePine()
-call UseGruvbox()
+" call UseGruvbox()
+
+
+lua << EOF
+require('onedark').setup {
+    style = 'dark'
+}
+require('onedark').load()
+EOF

@@ -58,4 +58,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'numToStr/Comment.nvim'
         Plug 'williamboman/mason.nvim'
         Plug 'williamboman/mason-lspconfig.nvim'
+        Plug 'navarasu/onedark.nvim'
 call plug#end()
