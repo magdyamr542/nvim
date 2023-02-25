@@ -70,7 +70,7 @@ endfun
 
 lua << EOF
 require('onedark').setup {
-    style = 'dark'
+    style = 'darker'
 }
 require('onedark').load()
 EOF
