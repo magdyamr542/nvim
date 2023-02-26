@@ -1,7 +1,6 @@
-lua << EOF
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = {"javascript" , "python" , "typescript" , "json", "html" , "go" , "vim" , "lua"},
+  ensure_installed = { "javascript", "python", "typescript", "json", "html", "go", "vim", "lua" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -25,16 +24,12 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
- indent = {
+  indent = {
     enable = false
-  }
-}
-EOF
+  },
 
-lua << EOF
-require("nvim-treesitter.configs").setup {
   yati = { enable = true },
- playground = {
+  playground = {
     enable = true,
     disable = {},
     updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
@@ -52,9 +47,6 @@ require("nvim-treesitter.configs").setup {
       show_help = '?',
     },
   }
+
+
 }
-EOF
-
-
-
-
