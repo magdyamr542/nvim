@@ -75,10 +75,6 @@ nnoremap <c-w><c-w> :call CloseVim()<CR>
 "install plugins
 nnoremap <leader>i <CMD> PlugInstall<CR>
 
-"changing the color theme
-nnoremap <leader>g <CMD> colorscheme gruvbox<CR>
-nnoremap <leader>rp <CMD> colorscheme rose-pine<CR>
-
 " replace fast
 nmap  S  :%s//g<LEFT><LEFT>
 nmap  <leader>s  :call ReplaceAll()<CR>

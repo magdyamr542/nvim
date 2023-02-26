@@ -1,76 +1,84 @@
-fun UseRosePine()
-    lua << EOF
-    require('rose-pine').setup({
-    --- @usage 'main' | 'moon'
-    dark_variant = 'moon',
-    bold_vert_split = false,
-    dim_nc_background = false,
-    disable_background = false,
-    disable_float_background = false,
-    disable_italics = false,
-
-    --- @usage string hex value or named color from rosepinetheme.com/palette
-    groups = {
-        background = 'base',
-        panel = 'surface',
-        border = 'highlight_med',
-        comment = 'muted',
-        link = 'iris',
-        punctuation = 'subtle',
-
-        error = 'love',
-        hint = 'iris',
-        info = 'foam',
-        warn = 'gold',
-
-        headings = {
-            h1 = 'iris',
-            h2 = 'foam',
-            h3 = 'rose',
-            h4 = 'gold',
-            h5 = 'pine',
-            h6 = 'foam',
-            }
-        -- or set all headings at once
-        -- headings = 'subtle'
-        },
-
-    -- Change specific vim highlight groups
-    highlight_groups = {
-        ColorColumn = { bg = 'rose' }
-        }
-    })
-
--- set colorscheme after options
-vim.cmd('colorscheme rose-pine')
-EOF
-endfun
-
-
-
-
+" Gruvbox
 fun! UseGruvbox()
+    colorscheme gruvbox
     let g:gruvbox_contrast_dark = 'dark'
     set background=dark
-    colorscheme gruvbox
-    highlight ColorColumn ctermbg=0 guibg=grey
-    hi SignColumn guibg=none
-    hi CursorLineNR guibg=None
-    highlight Normal guibg=none
-    highlight LineNr guifg=#5eacd3
-    highlight netrwDir guifg=#5eacd3
-    highlight qfFileName guifg=#aed75f
     hi TelescopeBorder guifg=#5eacd
 endfun
 
+" Onedark
+fun! UseOnedark()
+    let g:onedark_config = {
+        \ 'style': 'darker',
+    \}
+    colorscheme onedark
+endfun
 
-" call UseRosePine()
+" Vscode dark
+fun! UseVscodeDark()
+    lua require('vscode').change_style('dark')
+endfun
+
+" Vscode light
+fun! UseVscodeLight()
+    lua require('vscode').change_style('light')
+endfun
+
+
+
 " call UseGruvbox()
+call UseOnedark()
 
-
+" Pick color schemes
 lua << EOF
-require('onedark').setup {
-    style = 'darker'
-}
-require('onedark').load()
+local pickers = require "telescope.pickers"
+local finders = require "telescope.finders"
+local conf = require("telescope.config").values
+
+local onedark = "Onedark (dark)"
+local gruvbox = "Gruvbox"
+local vscodeDark = "Vscode (dark)"
+local vscodeLight = "Vscode (light)"
+
+function change_color_theme (opts)
+  opts = opts or {}
+  pickers.new(opts, {
+    prompt_title = "Color themes",
+    finder = finders.new_table {
+      results = {onedark , gruvbox , vscodeDark , vscodeLight}
+    },
+    sorter = conf.generic_sorter(opts),
+    attach_mappings = function(_, map)
+        map("i", "<CR>", function(prompt_bufnr)
+            local selection = require('telescope.actions.state').get_selected_entry()
+            
+            if selection == nil then
+                error("invalid color")
+            end
+
+            selectedColor = selection[1]
+
+            -- change the color
+              if selectedColor == gruvbox then
+                 vim.fn.UseGruvbox()
+              elseif selectedColor == onedark then
+                 vim.fn.UseOnedark()
+              elseif selectedColor == vscodeDark then
+                 vim.fn.UseVscodeDark()
+              elseif selectedColor == vscodeLight then
+                 vim.fn.UseVscodeLight()
+                else
+                  error("invalid color")
+                end
+            -- done change 
+
+            require('telescope.actions').close(prompt_bufnr)
+        end)
+        return true
+    end,
+  }):find()
+end
+
+-- invoke the function
+vim.api.nvim_set_keymap('n', '<leader>c', ':lua change_color_theme()<CR>', { noremap = true, silent = true })
 EOF
