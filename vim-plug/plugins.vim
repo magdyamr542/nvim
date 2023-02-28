@@ -58,4 +58,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'williamboman/mason.nvim'
         Plug 'williamboman/mason-lspconfig.nvim'
         Plug 'navarasu/onedark.nvim'
+        Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
