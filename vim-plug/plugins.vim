@@ -8,7 +8,6 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'Mofiqul/vscode.nvim'
         Plug 'jiangmiao/auto-pairs'
-        Plug 'kyazdani42/nvim-web-devicons'
         Plug 'tomasiser/vim-code-dark'
         Plug 'ayu-theme/ayu-vim' 
         Plug 'ambv/black'
@@ -42,9 +41,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'hrsh7th/vim-vsnip'
         Plug 'hrsh7th/vim-vsnip-integ'
         Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
-        Plug 'kyazdani42/nvim-web-devicons' 
         Plug 'ryanoasis/vim-devicons' 
-        Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+        Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+        Plug 'nvim-tree/nvim-web-devicons' 
         Plug 'rafamadriz/friendly-snippets'
         Plug 'yioneko/nvim-yati'
         Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }

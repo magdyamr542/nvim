@@ -52,7 +52,7 @@ require 'lspconfig'.sumneko_lua.setup {
 -- yaml lsp
 local yaml_on_attach = function(client, _)
   if client.name == "yamlls" then
-    client.resolved_capabilities.document_formatting = true
+    client.server_capabilities.document_formatting = true
   end
 end
 require('lspconfig').yamlls.setup {
