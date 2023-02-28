@@ -61,7 +61,7 @@ map('n', '<leader>i', '<CMD> PlugInstall<CR>')
 
 -- replace fast
 map('n', '<leader>S', ':%s//g<LEFT><LEFT>')
-map('n', ' <leader>s', ':lua require("helper").ReplaceAll()<CR>')
+map('n', '<leader>s', ':lua require("helper").ReplaceAll()<CR>')
 
 -- end of the line without space. it does not include the line break at the end
 -- of the line
