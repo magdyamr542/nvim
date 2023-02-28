@@ -25,8 +25,6 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
---  source init.lua
-map('n', '<leader>r', ':source ~/.config/nvim/init.lua<CR>')
 
 -- remove highlight from last search pattern when pressing enter
 map('n', '<CR>', ':noh<CR><CR>')
@@ -86,8 +84,6 @@ map('n', '<c-k><c-w>', ':lua require("helper").CloseOtherBuffers()<CR>')
 -- change color theme
 map('n', '<leader>c', ':lua require("colors").ChangeColorTheme()<CR>', { silent = true })
 
-
-
 -- telescope mappings
 -- ctrl p for find files
 map('n', '<C-p>', '<cmd>Telescope find_files hidden=true<CR>', { silent = true })
@@ -97,3 +93,6 @@ map('n', '<leader>fb', '<cmd>Telescope buffers<CR>', { silent = true })
 map('n', '<leader>fh', '<cmd>Telescope help_tags<CR>', { silent = true })
 -- finding words
 map('n', '<leader>f', '<cmd>Telescope live_grep<CR>', { silent = true })
+
+-- reload config
+map('n', '<leader>r', ':lua require("reload").ReloadConfig()<CR>', { silent = true })
