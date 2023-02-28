@@ -2,16 +2,15 @@ local M = {}
 
 local function UseGruvbox()
   vim.cmd("colorscheme gruvbox")
-  vim.g.gruvbox_contrast_dark = 'dark'
+  vim.g.gruvbox_contrast_dark = 'soft'
   vim.opt.background = "dark"
-  vim.cmd("hi TelescopeBorder guifg=#5eacd")
 end
 
 local function UseOnedark()
-  vim.g.onedark_config = {
-    style = 'darker',
+  require('onedark').setup {
+    style = 'darker'
   }
-  vim.cmd("colorscheme onedark")
+  require('onedark').load()
 end
 
 local function UseVscodeDark()

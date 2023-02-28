@@ -35,3 +35,4 @@ vim.opt.modifiable = true
 vim.wo.wrap = true
 vim.opt.scrolloff = 8
 vim.o.guicursor = "" -- keep cursor as rectangle in insert mode
+vim.opt.termguicolors = true

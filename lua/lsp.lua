@@ -1,7 +1,7 @@
 -- Mason
 require("mason").setup()
 require("mason-lspconfig").setup {
-  ensure_installed = { 'pyright', 'tsserver', 'gopls', 'html', "bashls", "cssls", "angularls", "jsonls", "sumneko_lua" }
+  ensure_installed = { 'pyright', 'tsserver', 'gopls', 'html', "bashls", "cssls", "angularls", "jsonls", "lua_ls" }
 }
 
 
@@ -38,7 +38,7 @@ for _, lsp in pairs(servers) do
 end
 
 -- lua lsp
-require 'lspconfig'.sumneko_lua.setup {
+require 'lspconfig'.lua_ls.setup {
   settings = {
     Lua = {
       diagnostics = {
