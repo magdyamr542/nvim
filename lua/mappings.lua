@@ -55,7 +55,7 @@ map('v', '<c-k><c-u>', '<Plug>(comment_toggle_linewise_visual)')
 map('n', '<c-w><c-w>', ':lua require("helper").CloseVim()<CR>')
 
 -- install plugins
-map('n', '<leader>i', '<CMD> PlugInstall<CR>')
+map('n', '<leader>i', '<CMD> PackerInstall<CR>')
 
 -- replace fast
 map('n', '<leader>S', ':%s//g<LEFT><LEFT>')
@@ -83,7 +83,7 @@ map('n', '<c-k><c-w>', ':lua require("helper").CloseOtherBuffers()<CR>')
 
 -- change color theme
 map('n', '<leader>c', ':lua require("colors").ChangeColorTheme()<CR>', { silent = true })
-
+--
 -- telescope mappings
 -- ctrl p for find files
 map('n', '<C-p>', '<cmd>Telescope find_files hidden=true<CR>', { silent = true })
