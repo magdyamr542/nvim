@@ -35,14 +35,11 @@ return require('packer').startup(function(use)
         use 'sheerun/vim-polyglot'                                             -- Language pack for syntax highlighting
         use 'scrooloose/NERDTree'                                              -- File system explorer
         use 'RRethy/vim-illuminate'                                            -- Highlight other occurrences of the word under the cursor
-        use 'sbdchd/neoformat'                                                 -- Code formatter
         use 'pangloss/vim-javascript'                                          -- JavaScript syntax highlighting
         use 'leafgarland/typescript-vim'                                       -- TypeScript syntax highlighting
         use 'morhetz/gruvbox'                                                  -- Color scheme
         use 'unblevable/quick-scope'                                           -- Highlight characters used for motions
-        use 'liuchengxu/vim-which-key'                                         -- Show key mappings in a popup
         use 'tpope/vim-surround'                                               -- Easy manipulation of surroundings
-        use 'preservim/nerdcommenter'                                          -- Commenting shortcuts
         use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' } -- Preview Markdown files in browser
         use 'EdenEast/nightfox.nvim'                                           -- Color scheme
         use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }           -- Syntax highlighting and parsing

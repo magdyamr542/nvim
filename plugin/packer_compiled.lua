@@ -179,11 +179,6 @@ _G.packer_plugins = {
     path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  neoformat = {
-    loaded = true,
-    path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/neoformat",
-    url = "https://github.com/sbdchd/neoformat"
-  },
   ["neoscroll.nvim"] = {
     loaded = true,
     path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
@@ -193,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/neovim",
     url = "https://github.com/rose-pine/neovim"
-  },
-  nerdcommenter = {
-    loaded = true,
-    path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/nerdcommenter",
-    url = "https://github.com/preservim/nerdcommenter"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -328,11 +318,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
-  },
-  ["vim-which-key"] = {
-    loaded = true,
-    path = "/Users/amr.metwally/.local/share/nvim/site/pack/packer/start/vim-which-key",
-    url = "https://github.com/liuchengxu/vim-which-key"
   },
   ["vscode.nvim"] = {
     loaded = true,
