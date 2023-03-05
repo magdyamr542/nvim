@@ -23,7 +23,6 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<c-f>', vim.lsp.buf.formatting, bufopts)
   vim.keymap.set('n', '<leader>gd', builtin.lsp_implementations, bufopts)
   vim.keymap.set('n', '<leader>fd', builtin.lsp_references, bufopts)
-  vim.keymap.set('n', 'fr', vim.lsp.buf.references, bufopts)
 end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
@@ -60,9 +59,9 @@ require('lspconfig').yamlls.setup {
   settings = {
     yaml = {
       schemas = {
-        ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
-        ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
-        ['https://raw.githubusercontent.com/docker/cli/master/cli/compose/schema/data/config_schema_v3.9.json'] = "docker-compose.yml",
+            ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
+            ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+            ['https://raw.githubusercontent.com/docker/cli/master/cli/compose/schema/data/config_schema_v3.9.json'] = "docker-compose.yml",
       },
     },
   }
