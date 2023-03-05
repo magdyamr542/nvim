@@ -1,9 +1,15 @@
 local M = {}
 
+local function applyQuickScopeColors()
+  vim.cmd("highlight QuickScopePrimary guifg='#469839' gui=underline ctermfg=155 cterm=underline")
+  vim.cmd("highlight QuickScopeSecondary guifg='#C02323' gui=underline ctermfg=81 cterm=underline")
+end
+
 local function UseGruvbox()
   vim.cmd("colorscheme gruvbox")
   vim.g.gruvbox_contrast_dark = 'soft'
   vim.opt.background = "dark"
+  applyQuickScopeColors()
 end
 
 local function UseOnedark()
@@ -11,14 +17,17 @@ local function UseOnedark()
     style = 'darker'
   }
   require('onedark').load()
+  applyQuickScopeColors()
 end
 
 local function UseVscodeDark()
   require('vscode').change_style('dark')
+  applyQuickScopeColors()
 end
 
 local function UseVscodeLight()
   require('vscode').change_style('light')
+  applyQuickScopeColors()
 end
 
 UseOnedark()
