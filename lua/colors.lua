@@ -14,7 +14,7 @@ end
 
 local function UseOnedark()
   require('onedark').setup {
-    style = 'darker'
+    style = 'warmer'
   }
   require('onedark').load()
   applyQuickScopeColors()
