@@ -14,11 +14,20 @@ end
 
 local function UseOnedark()
   require('onedark').setup {
+    style = 'warm'
+  }
+  require('onedark').load()
+  applyQuickScopeColors()
+end
+
+local function UseOnedarkWarmer()
+  require('onedark').setup {
     style = 'warmer'
   }
   require('onedark').load()
   applyQuickScopeColors()
 end
+
 
 local function UseVscodeDark()
   require('vscode').load('dark')
@@ -37,6 +46,7 @@ local finders = require "telescope.finders"
 local conf = require("telescope.config").values
 
 local onedark = "Onedark (dark)"
+local onedarkWarmer = "Onedark (dark warmer)"
 local gruvbox = "Gruvbox"
 local vscodeDark = "Vscode (dark)"
 local vscodeLight = "Vscode (light)"
@@ -46,7 +56,7 @@ function M.ChangeColorTheme(opts)
   pickers.new(opts, {
     prompt_title = "Color themes",
     finder = finders.new_table {
-      results = { onedark, gruvbox, vscodeDark, vscodeLight }
+      results = { onedark, onedarkWarmer, gruvbox, vscodeDark, vscodeLight }
     },
     sorter = conf.generic_sorter(opts),
     attach_mappings = function(_, map)
@@ -64,6 +74,8 @@ function M.ChangeColorTheme(opts)
           UseGruvbox()
         elseif selectedColor == onedark then
           UseOnedark()
+        elseif selectedColor == onedarkWarmer then
+          UseOnedarkWarmer()
         elseif selectedColor == vscodeDark then
           UseVscodeDark()
         elseif selectedColor == vscodeLight then
