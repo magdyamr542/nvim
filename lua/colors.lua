@@ -21,12 +21,12 @@ local function UseOnedark()
 end
 
 local function UseVscodeDark()
-  require('vscode').change_style('dark')
+  require('vscode').load('dark')
   applyQuickScopeColors()
 end
 
 local function UseVscodeLight()
-  require('vscode').change_style('light')
+  require('vscode').load('light')
   applyQuickScopeColors()
 end
 
