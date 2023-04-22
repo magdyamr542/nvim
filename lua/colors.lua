@@ -1,8 +1,8 @@
 local M = {}
 
 local function applyQuickScopeColors()
-  vim.cmd("highlight QuickScopePrimary guifg='#469839' gui=underline ctermfg=155 cterm=underline")
-  vim.cmd("highlight QuickScopeSecondary guifg='#C02323' gui=underline ctermfg=81 cterm=underline")
+  vim.cmd("highlight QuickScopePrimary guifg='#469839'")
+  vim.cmd("highlight QuickScopeSecondary guifg='#C02323'")
 end
 
 local function UseGruvbox()
@@ -14,7 +14,7 @@ end
 
 local function UseOnedark()
   require('onedark').setup {
-    style = 'warm'
+      style = 'warm'
   }
   require('onedark').load()
   applyQuickScopeColors()
@@ -22,7 +22,7 @@ end
 
 local function UseOnedarkWarmer()
   require('onedark').setup {
-    style = 'warmer'
+      style = 'warmer'
   }
   require('onedark').load()
   applyQuickScopeColors()
@@ -54,41 +54,41 @@ local vscodeLight = "Vscode (light)"
 function M.ChangeColorTheme(opts)
   opts = opts or {}
   pickers.new(opts, {
-    prompt_title = "Color themes",
-    finder = finders.new_table {
-      results = { onedark, onedarkWarmer, gruvbox, vscodeDark, vscodeLight }
-    },
-    sorter = conf.generic_sorter(opts),
-    attach_mappings = function(_, map)
-      map("i", "<CR>", function(prompt_bufnr)
-        local selection = require('telescope.actions.state').get_selected_entry()
+      prompt_title = "Color themes",
+      finder = finders.new_table {
+          results = { onedark, onedarkWarmer, gruvbox, vscodeDark, vscodeLight }
+      },
+      sorter = conf.generic_sorter(opts),
+      attach_mappings = function(_, map)
+        map("i", "<CR>", function(prompt_bufnr)
+          local selection = require('telescope.actions.state').get_selected_entry()
 
-        if selection == nil then
-          error("invalid color")
-        end
+          if selection == nil then
+            error("invalid color")
+          end
 
-        local selectedColor = selection[1]
+          local selectedColor = selection[1]
 
-        -- change the color
-        if selectedColor == gruvbox then
-          UseGruvbox()
-        elseif selectedColor == onedark then
-          UseOnedark()
-        elseif selectedColor == onedarkWarmer then
-          UseOnedarkWarmer()
-        elseif selectedColor == vscodeDark then
-          UseVscodeDark()
-        elseif selectedColor == vscodeLight then
-          UseVscodeLight()
-        else
-          error("invalid color")
-        end
-        -- done change
+          -- change the color
+          if selectedColor == gruvbox then
+            UseGruvbox()
+          elseif selectedColor == onedark then
+            UseOnedark()
+          elseif selectedColor == onedarkWarmer then
+            UseOnedarkWarmer()
+          elseif selectedColor == vscodeDark then
+            UseVscodeDark()
+          elseif selectedColor == vscodeLight then
+            UseVscodeLight()
+          else
+            error("invalid color")
+          end
+          -- done change
 
-        require('telescope.actions').close(prompt_bufnr)
-      end)
-      return true
-    end,
+          require('telescope.actions').close(prompt_bufnr)
+        end)
+        return true
+      end,
   }):find()
 end
 
