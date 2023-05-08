@@ -1,11 +1,39 @@
-
 {
-  "range over channel": {
-    "prefix": ["ranch"],
+  "If error block": {
+    "prefix": "ifer",
     "body": [
-      "for $1 := range $2 {",
-      "\t\t$0",
+      "if err != nil {",
+      "     $1",
       "}"
     ],
-    "description": "Ranges over a channels values"
-  }}
+    "description": "If error block"
+  },
+  "Create go thread func": {
+    "prefix": "gof",
+    "body": [
+      "go func () {\n     $1    \n}()"
+    ],
+    "description": "Create go routine"
+  },
+  "Receiver function": {
+    "prefix": "funcr",
+    "body": [
+      "func ($1 $2) $3 ($4) $5 {",
+      "$6",
+      "}"
+    ],
+    "description": "Create a receiver function"
+  },
+  "Select statement": {
+    "prefix": "sel",
+    "body": [
+      "select {",
+      "case $1 := <-$2:",
+      "$3",
+      "default:",
+      "$4",
+      "}"
+    ],
+    "description": "Select statement between channels"
+  }
+}
