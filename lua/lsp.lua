@@ -1,7 +1,7 @@
 -- Mason
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { 'pyright', 'tsserver', 'gopls', 'html', "bashls", "cssls", "angularls", "jsonls", "lua_ls" }
+  ensure_installed = { 'pyright', 'tsserver', 'gopls', "jsonls", "lua_ls" }
 }
 
 
@@ -19,37 +19,36 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', 'gh', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<c-f>', vim.lsp.buf.formatting, bufopts)
   vim.keymap.set('n', '<leader>gd', builtin.lsp_implementations, bufopts)
   vim.keymap.set('n', '<leader>fd', builtin.lsp_references, bufopts)
 end
 
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-        border = "rounded",
-    })
+  border = "rounded",
+})
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'tsserver', 'gopls', 'html', "bashls", "cssls", "angularls", "jsonls" }
+local servers = { 'pyright', 'tsserver', 'gopls', "jsonls" }
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
-      on_attach = on_attach,
-      capabilities = capabilities
+    on_attach = on_attach,
+    capabilities = capabilities
   }
 end
 
 -- lua lsp
 require 'lspconfig'.lua_ls.setup {
-    settings = {
-        Lua = {
-            diagnostics = {
-                -- Get the language server to recognize the `vim` global
-                globals = { 'vim' },
-            },
-        },
+  settings = {
+    Lua = {
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = { 'vim' },
+      },
     },
+  },
 }
 
 -- yaml lsp
@@ -59,16 +58,16 @@ local yaml_on_attach = function(client, _)
   end
 end
 require('lspconfig').yamlls.setup {
-    on_attach = yaml_on_attach,
-    settings = {
-        yaml = {
-            schemas = {
-                ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
-                ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
-                ['https://raw.githubusercontent.com/docker/cli/master/cli/compose/schema/data/config_schema_v3.9.json'] = "docker-compose.yml",
-            },
-        },
-    }
+  on_attach = yaml_on_attach,
+  settings = {
+    yaml = {
+      schemas = {
+        ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
+        ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+        ['https://raw.githubusercontent.com/docker/cli/master/cli/compose/schema/data/config_schema_v3.9.json'] = "docker-compose.yml",
+      },
+    },
+  }
 }
 
-require("fidget").setup {}
+-- require("fidget").setup {}
