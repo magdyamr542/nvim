@@ -1,4 +1,11 @@
 {
+  "Printf": {
+    "prefix": "ff",
+    "body": [
+      "fmt.Printf(\"$1\")"
+    ],
+    "description": "If error block"
+  },
   "If error block": {
     "prefix": "ifer",
     "body": [
