@@ -74,7 +74,7 @@ return require('packer').startup(function(use)
       use 'lukas-reineke/indent-blankline.nvim' -- A plugin to display indent lines in Neovim.
       use 'nvim-lualine/lualine.nvim' -- A fast and customizable status line plugin for Neovim.
       use 'lewis6991/gitsigns.nvim' -- A Git gutter plugin for Neovim.
-      use 'j-hui/fidget.nvim' -- A lightweight file explorer for Neovim.
+      use { 'j-hui/fidget.nvim', tag = 'lecay' } -- A lightweight file explorer for Neovim.
       use 'numToStr/Comment.nvim' -- A plugin to easily comment and uncomment code in various filetypes.
       use 'williamboman/mason.nvim' -- Portable package manager for Neovim
       use 'williamboman/mason-lspconfig.nvim' -- A LSP configuration for the Mason build language.
