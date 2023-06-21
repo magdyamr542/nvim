@@ -20,8 +20,12 @@ local function bash(_, _, command)
     return res
 end
 
-local filename = function()
-    return { vim.fn.expand "%:p" }
+local filepath = function(_, _, relative)
+    if relative == true then
+        return { vim.fn.expand "%" }
+    else
+        return { vim.fn.expand "%:p" }
+    end
 end
 
 local date = function() return { os.date('%Y-%m-%d') } end
@@ -46,11 +50,18 @@ ls.add_snippets(nil, {
             func(bash, {}, { user_args = { "pwd" } }),
         }),
         snip({
-            trig = "filename",
-            namr = "Filename",
+            trig = "filepath",
+            namr = "Relative filepath",
+            dscr = "Relative path to file",
+        }, {
+            func(filepath, {}, { user_args = { true } }),
+        }),
+        snip({
+            trig = "filepathabs",
+            namr = "Absolute filepath",
             dscr = "Absolute path to file",
         }, {
-            func(filename, {}),
+            func(filepath, {}, { user_args = { false } }),
         }),
     },
     go = {
