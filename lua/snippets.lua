@@ -50,14 +50,14 @@ ls.add_snippets(nil, {
             func(bash, {}, { user_args = { "pwd" } }),
         }),
         snip({
-            trig = "filepath",
-            namr = "Relative filepath",
-            dscr = "Relative path to file",
+            trig = "filename",
+            namr = "Filename",
+            dscr = "Name of the file",
         }, {
             func(filepath, {}, { user_args = { true } }),
         }),
         snip({
-            trig = "filepathabs",
+            trig = "filepath",
             namr = "Absolute filepath",
             dscr = "Absolute path to file",
         }, {
