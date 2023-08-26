@@ -63,6 +63,20 @@ ls.add_snippets(nil, {
         }, {
             func(filepath, {}, { user_args = { false } }),
         }),
+        snip({
+            trig = "gitsha",
+            namr = "Git SHA",
+            dscr = "Current HEAD SHA",
+        }, {
+            func(bash, {}, { user_args = { "git rev-parse HEAD" } }),
+        }),
+        snip({
+            trig = "gitbranch",
+            namr = "Git Branch",
+            dscr = "Current branch",
+        }, {
+            func(bash, {}, { user_args = { "git rev-parse --abbrev-ref HEAD" } }),
+        })
     },
     go = {
         snip("test", {
