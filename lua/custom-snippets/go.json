@@ -4,7 +4,7 @@
     "body": [
       "fmt.Printf(\"$1\")"
     ],
-    "description": "If error block"
+    "description": "Printf statement"
   },
   "If error block": {
     "prefix": "ifer",
@@ -42,5 +42,14 @@
       "}"
     ],
     "description": "Select statement between channels"
+  },
+  "Func main": {
+    "prefix": "fmain",
+    "body": [
+      "func main () {",
+      "     $1",
+      "}"
+    ],
+    "description": "Func main block"
   }
 }
