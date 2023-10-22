@@ -1,4 +1,5 @@
-require("indent_blankline").setup {
-    char = '┊',
-    show_trailing_blankline_indent = false,
+require("ibl").setup {
+    indent = { char = "┊", },
+    whitespace = { highlight = { "Whitespace", "NonText" } },
+    scope = { enabled = false },
 }
