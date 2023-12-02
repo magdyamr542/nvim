@@ -2,6 +2,7 @@ local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
     file_ignore_patterns = { ".git/*" },
+    dynamic_preview_title = true,
     pickers = {
       find_files = {
         hidden = true
