@@ -43,3 +43,31 @@ end
 
 -- Define a command to call the function from the Vim command prompt
 vim.cmd("command! -nargs=1 ReplaceInLine lua ReplaceOnCurrentLine(<q-args>)")
+
+
+
+
+
+
+
+-- Define the function
+function QuoteIds()
+    -- Get the current visual selection range
+    local start_line = vim.fn.line("'<")
+    local end_line = vim.fn.line("'>")
+
+    -- Loop through the selected lines
+    for line = start_line, end_line do
+        -- Get the content of each line
+        local line_content = vim.fn.getline(line)
+
+        -- Add single quotes around the line content
+        local quoted_line = "'" .. line_content .. "'" .. ","
+
+        -- Set the modified line content
+        vim.fn.setline(line, quoted_line)
+    end
+
+    -- Update the display
+    vim.fn.visualmode() -- This triggers a redraw to update the display
+end
