@@ -77,9 +77,10 @@ map('n', '<leader>[', ':cprevious<CR>')
 
 -- close one buffer
 map('n', '<c-w>', ':bd<CR>')
+map('n', '<leader>w', ':bd<CR>')
 
--- closing all buffers
-map('n', '<c-k><c-w>', ':BufOnly<CR>')
+-- close all buffers
+map('n', '<leader>kw', ':lua require("bufonly").BufOnly()<CR>', { silent = true })
 
 -- change color theme
 map('n', '<leader>c', ':lua require("colors").ChangeColorTheme()<CR>', { silent = true })

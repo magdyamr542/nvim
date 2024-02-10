@@ -80,7 +80,6 @@ return require('packer').startup(function(use)
       use 'williamboman/mason-lspconfig.nvim'             -- A LSP configuration for the Mason build language.
       use 'navarasu/onedark.nvim'                         -- A dark color scheme for Neovim.
       use 'norcalli/nvim-colorizer.lua'                   -- A plugin to highlight color codes in various filetypes.
-      use { 'numtostr/BufOnly.nvim', cmd = 'BufOnly' }    -- Close other buffers
 
       -- Automatically set up your configuration after cloning packer.nvim
       -- Put this at the end after all plugins

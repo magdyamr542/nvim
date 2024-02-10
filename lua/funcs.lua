@@ -71,3 +71,24 @@ function QuoteIds()
     -- Update the display
     vim.fn.visualmode() -- This triggers a redraw to update the display
 end
+
+function OpenPdfAtPage()
+    -- Get the currently highlighted text
+    local selected_text = vim.fn.getline("'<,'>")
+
+    -- Check if the text matches the expected format
+    local pattern = "(.-)%s+(%d+)"
+    local pdf_path, page_number = selected_text:match(pattern)
+
+    if pdf_path and page_number then
+        -- Construct the bash command to open the PDF at the specified page
+        local bash_command = string.format("evince %s -p %s &", pdf_path, page_number)
+
+        -- Execute the bash command from Neovim
+        vim.fn.system(bash_command)
+    else
+        print("Invalid format. Expected: <pdf path> <page number>")
+    end
+end
+
+vim.api.nvim_set_keymap('x', '<leader>op', [[:lua OpenPdfAtPage()<CR>]], { noremap = true, silent = true })
