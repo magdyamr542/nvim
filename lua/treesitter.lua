@@ -2,12 +2,6 @@ require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "javascript", "python", "typescript", "json", "html", "go", "vim", "lua" },
 
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-
-  -- List of parsers to ignore installing (for "all")
-  ignore_install = { "javascript" },
-
   highlight = {
     -- `false` will disable the whole extension
     enable = true,
@@ -32,7 +26,7 @@ require 'nvim-treesitter.configs'.setup {
   playground = {
     enable = true,
     disable = {},
-    updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
+    updatetime = 25,         -- Debounced time for highlighting nodes in the playground from source code
     persist_queries = false, -- Whether the query persists across vim sessions
     keybindings = {
       toggle_query_editor = 'o',
@@ -47,6 +41,4 @@ require 'nvim-treesitter.configs'.setup {
       show_help = '?',
     },
   }
-
-
 }
