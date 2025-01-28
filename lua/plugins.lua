@@ -71,7 +71,7 @@ return require('packer').startup(function(use)
       use 'karb94/neoscroll.nvim'                         -- A smooth scrolling plugin for Neovim.
       use { 'mg979/vim-visual-multi', branch = 'master' } -- A multiple cursors plugin for Neovim.
       use { 'rose-pine/neovim', branch = 'main' }         -- A color scheme for Neovim.
-      use 'lukas-reineke/indent-blankline.nvim'           -- A plugin to display indent lines in Neovim.
+      use {'lukas-reineke/indent-blankline.nvim', commit='04e44b09ee3ff189c69ab082edac1ef7ae2e256c'}           -- A plugin to display indent lines in Neovim.
       use 'nvim-lualine/lualine.nvim'                     -- A fast and customizable status line plugin for Neovim.
       use 'lewis6991/gitsigns.nvim'                       -- A Git gutter plugin for Neovim.
       use { 'j-hui/fidget.nvim', tag = 'lecay' }          -- A lightweight file explorer for Neovim.
