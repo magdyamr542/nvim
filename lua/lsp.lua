@@ -94,4 +94,10 @@ require('lspconfig').yamlls.setup {
     }
 }
 
--- require("fidget").setup {}
+-- rust lsp
+require 'lspconfig'.rust_analyzer.setup {
+    cmd = { "rust-analyzer" }, -- use system installed rust-analyzer
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+
