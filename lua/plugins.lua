@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
       })
       use 'hrsh7th/cmp-nvim-lsp-signature-help'           -- Show signature help for autocomplete
       use 'ryanoasis/vim-devicons'                        -- Icons for file types and plugins
-      use { 'akinsho/bufferline.nvim', tag = 'v3.*' }     -- Display buffer tabs with configurable colors and icons.
+      use { 'akinsho/bufferline.nvim' }     -- Display buffer tabs with configurable colors and icons.
       use 'nvim-tree/nvim-web-devicons'                   -- A Lua library for file icon support in Neovim.
       use 'rafamadriz/friendly-snippets'                  -- A collection of snippets for various programming languages.
       use 'yioneko/nvim-yati'                             -- A simple and fast indent line plugin for Neovim.
