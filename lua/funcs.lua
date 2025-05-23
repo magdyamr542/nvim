@@ -62,7 +62,12 @@ function QuoteIds()
         local line_content = vim.fn.getline(line)
 
         -- Add single quotes around the line content
-        local quoted_line = "'" .. line_content .. "'" .. ","
+        local quoted_line = "'" .. line_content .. "'"
+
+        -- Add a comma if it's not the last line
+        if line < end_line then
+            quoted_line = quoted_line .. ","
+        end
 
         -- Set the modified line content
         vim.fn.setline(line, quoted_line)
